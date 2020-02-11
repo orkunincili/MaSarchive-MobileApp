@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TvSaveActivity"
+    android:background="#080808">
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:id="@+id/tv_poster"
+      android:alpha="0.1"></ImageView>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_poster"
+      android:textColor="#ffffff"
+      android:textSize="25dp"
+      android:textStyle="bold"
+      android:text="Dark"
+      android:layout_marginLeft="10dp"
+      android:id="@+id/tv_name"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate"
+        android:textColor="#ffffff"
+        android:layout_toRightOf="@id/tv_name"
+        android:layout_below="@id/tv_poster"
+        android:layout_marginLeft="15dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/duration"
+        android:textColor="#ffffff"
+        android:layout_below="@id/tv_poster"
+        android:layout_toRightOf="@id/rate"
+        android:layout_marginLeft="10dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/season"
+        android:textColor="#ffffff"
+        android:layout_below="@id/tv_poster"
+        android:layout_toRightOf="@id/duration"
+        android:layout_marginLeft="10dp"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textColor="#ffffff"
+        android:id="@+id/summary"
+        android:layout_below="@id/tv_name"></TextView>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Save"
+      android:layout_below="@id/summary"
+      android:id="@+id/save"></Button>
+
+
+
+</RelativeLayout>

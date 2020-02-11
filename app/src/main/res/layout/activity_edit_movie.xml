@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".EditMovieActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/poster_bg"
+
+        ></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF000000"></TextView>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:id="@+id/poster"
+        android:layout_below="@id/movie_name"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        ></ImageView>
+
+
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="TextView"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_name"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/rate128"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/movie_name"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rate128"></ImageView>
+
+        <TextView
+            android:id="@+id/rate"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/rate128"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:id="@+id/dot1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/rate"
+            android:background="@drawable/dot64"></ImageView>
+
+        <ImageView
+            android:id="@+id/duration128"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/dot1"
+            android:background="@drawable/duration128"></ImageView>
+        <TextView
+            android:id="@+id/duration"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/duration128"
+            android:textColor="#ffffff" />
+        <ImageView
+            android:id="@+id/dot2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/duration"
+            android:background="@drawable/dot64"></ImageView>
+
+        <ImageView
+            android:id="@+id/imdb"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="-8dp"
+            android:layout_toRightOf="@id/dot2"
+            android:background="@drawable/imdb128"
+            android:clickable="true"></ImageView>
+        <ImageView
+            android:id="@+id/dot3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imdb"
+            android:background="@drawable/dot64"></ImageView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/delete"
+            android:layout_below="@id/summary"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/dot3"
+            android:background="@drawable/delete64"
+            android:clickable="true"></ImageView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_summary_frame"
+        android:layout_below="@id/movie_summary"
+        android:layout_marginTop="10dp"></FrameLayout>
+
+    <EditText
+        android:id="@+id/user_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textColor="#ffffff"
+        android:maxLength="2000"
+        android:maxLines="4"
+        android:layout_below="@id/movie_summary_frame"/>
+    <Button
+        android:id="@+id/save_note"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save my summary"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:visibility="invisible"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:background="#940a37"
+        android:layout_below="@id/user_note"
+        android:layout_marginTop="10dp"
+        ></Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:id="@+id/user_note_text"
+        android:layout_below="@id/save_note"
+        ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_summary"
+            android:text="Movie Summary"
+            android:textColor="#940a37"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/poster"
+            android:clickable="true"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_summary"
+            android:clickable="true"
+            android:text="My Summary"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/poster"
+            android:layout_toRightOf="@id/movie_summary"
+            android:layout_marginLeft="15dp"
+            ></TextView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

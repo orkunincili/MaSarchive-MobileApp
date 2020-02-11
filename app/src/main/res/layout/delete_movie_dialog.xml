@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_border">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/alarm"
+        android:layout_gravity="center"
+        android:background="@drawable/alarm128"
+
+        ></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarm"
+        android:id="@+id/question"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/question"
+        android:id="@+id/linear_layout">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@drawable/success64"
+            android:id="@+id/yes"></ImageView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/no"
+            android:layout_marginLeft="100dp"
+            android:clickable="true"
+            android:background="@drawable/cancel64"
+            android:layout_gravity="center"></ImageView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

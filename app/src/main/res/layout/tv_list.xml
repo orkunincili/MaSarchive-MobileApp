@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090909">
+
+   <ImageView
+       android:layout_width="100dp"
+       android:layout_height="140dp"
+       android:id="@+id/tv_poster"
+       android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:text="tv name"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/tv_poster"></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:id="@+id/take_a_look_linear"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_poster"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/look64"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:text="take a look"
+            android:textColor="#737373"
+            app:fontFamily="monospace"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#333333"
+        android:layout_below="@id/tv_poster"></TextView>
+
+</RelativeLayout>
