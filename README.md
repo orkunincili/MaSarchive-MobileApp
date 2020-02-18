@@ -1,6 +1,6 @@
 # MaSarchive-MobileApp
 
-A mobile application that allows you to add movies and series, write about what you want, and make an archive.
+A mobile application that allows you to add movies and tv-shows, write about what you want, and make an archive.
 
 **in-app screenshots**
 
